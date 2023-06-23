@@ -9,7 +9,7 @@ const useAxiosFetch = (endpoint) => {
     const fetchData = async () => {
         setIsLoading(true)
         try {
-            const response = await axios.request(`http://localhost:3500/${endpoint}`)
+            const response = await axios.request(`https://github.com/prolixtrex/space-tourism/blob/master/data/data.json/${endpoint}`)
             setData(response.data)
         } catch (err) {
             setError(err)
