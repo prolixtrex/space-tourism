@@ -1,0 +1,84 @@
+.home {
+    background-image: url(./home/background-home-desktop.jpg);
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.intro {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.explore {
+    width: 274px;
+    height: 274px;
+    background-color: hsl(0, 0%, 100%);
+    color: #000;
+    border-radius: 50%;
+    text-align: center;
+    display: grid;
+    place-content: center;
+}
+
+@media (max-width: 950px) {
+    .home {
+        background-image: url(./home/background-home-tablet.jpg);
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 20px;
+    }
+
+    .intro {
+        width: 100%;
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .intro p {
+        text-align: center;
+    }
+
+    .explore {
+        width: 250px;
+        height: 250px;
+    }
+
+    .home h5 {
+        font-size: 1.5rem;
+    }
+
+    .home h1 {
+        font-size: 8em;
+    }
+}
+
+@media (max-width: 540px) {
+    .home {
+        background-image: url(./home/background-home-mobile.jpg);
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .explore {
+        width: 150px;
+        height: 150px;
+    }
+
+    .home h1 {
+        font-size: 6rem;
+    }
+
+    .home h5 {
+        font-size: 1rem;
+    }
+}

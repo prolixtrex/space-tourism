@@ -1,0 +1,124 @@
+.destination {
+    background-image: url(./assets/destination/background-destination-desktop.jpg);
+}
+
+.destination h5 {
+    display: flex;
+}
+
+.destination h5 span {
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+}
+
+.destination-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.destination-details .image {
+    width: 30%;
+    height: 350px;
+    display: grid;
+    place-content: center;
+}
+
+.destination-details .image .img-wrapper {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.destination-details .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.destination-details .destination-facts {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.destination-facts .nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+}
+
+.destination-facts .nav ul li {
+    cursor: pointer;
+    padding-bottom: 5px;
+    opacity: 70%;
+}
+
+.destination-facts .nav a {
+    text-decoration: none;
+}
+
+.destination-facts .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.destination-details .details .name {
+    margin: -10px;
+}
+
+.destination-facts .facts {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 950px) {
+    .destination {
+        background-image: url(./assets/destination/background-destination-tablet.jpg);
+    }
+
+    .destination h1 {
+        font-size: 7em;
+    }
+
+    .destination-details .image {
+        width: 100%;
+    }
+
+    .destination-details .destination-facts {
+        width: 100%;
+    }
+
+    .destination-facts {
+        gap: 2.5rem;
+    }
+
+    .destination-facts .nav {
+        margin-bottom: -20px;
+    }
+
+    .destination-facts .nav ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav-text,
+    .subheading-2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 540px) {
+    .destination {
+        background-image: url(./assets/destination/background-destination-mobile.jpg);
+    }
+
+    .destination h1 {
+        font-size: 5rem;
+    }
+
+    .nav-text,
+    .subheading-2 {
+        font-size: larger;
+    }
+}
