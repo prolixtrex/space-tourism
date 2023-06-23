@@ -13,7 +13,20 @@ const useAxiosFetch = (endpoint) => {
         const fetchData = async () => {
             try {
                 const response = await axios.request(`https://spacejson.netlify.app/${endpoint}.json`)
-                setData(response.data)
+                const result = response.data
+                switch (endpoint) {
+                    case "destinations":
+                        setData(result.destinations)
+                        break;
+                    case "crew":
+                        setData(result.crew)
+                        break;
+                    case "technology":
+                        setData(result.technology)
+                        break;
+                    default:
+                        break;
+                }
             } catch (err) {
                 setError(err)
             } finally {

@@ -19,8 +19,6 @@ const Destination = ({ setActive }) => {
         !isLoading && setCurrentDest(data[0])
     }, [data, isLoading])
 
-
-
     const setDest = (name) => {
         const current = data.filter(data => data.name === name)
         setCurrentDest(current[0])
