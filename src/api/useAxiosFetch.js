@@ -12,7 +12,7 @@ const useAxiosFetch = (endpoint) => {
         setIsLoading(true)
         const fetchData = async () => {
             try {
-                const response = await axios.request(`https://github.com/prolixtrex/space-tourism/blob/master/data/${endpoint}.json`)
+                const response = await axios.request(`https://spacejson.netlify.app/${endpoint}.json`)
                 setData(response.data)
             } catch (err) {
                 setError(err)
